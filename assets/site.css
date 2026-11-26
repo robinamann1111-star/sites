@@ -123,3 +123,5 @@ section.glowsec:before{height:100%;background:radial-gradient(45% 50% at 50% 55%
 .glowball{position:fixed;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(closest-side,rgba(246,178,27,.10),transparent);transform:translate(-50%,-50%);transition:opacity .6s var(--ease);left:-999px;top:-999px}
 .price-note{margin-top:18px;color:var(--g2);font-size:15px}
 @media (hover:none),(prefers-reduced-motion:reduce){.glowball{display:none}}
+.price small:first-child{margin-right:2px}
+.price{white-space:nowrap}.g4 .price{font-size:34px}@media (max-width:640px){.g4 .price{font-size:36px}}
