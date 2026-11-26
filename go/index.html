@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Redirecting...</title>
+<script>
+(function(){
+var SCA="sca_ref=7412359.hb3AEXAiQ6CD1";
+var D={
+ lp:function(s){return "https://biohackinghq.gumroad.com/l/longevity-protocol?utm_source=instagram&utm_medium=dm&utm_campaign="+s+"&utm_content=direct_test"},
+ nl:function(s){return "https://biohackinghq.gumroad.com/l/normal-labs?utm_source=instagram&utm_medium=dm&utm_campaign="+s+"&utm_content=direct_test"},
+ nlb:function(s){return "https://biohackinghq.gumroad.com/l/normal-labs?wanted=true&utm_source=instagram&utm_medium=dm&utm_campaign="+s},
+ t5:function(s){return "https://biohackinghq.gumroad.com/l/5TestsFreeGuide?utm_source=instagram&utm_medium=dm&utm_campaign="+s},
+ lb:function(s){return "https://biohackinghq.gumroad.com/l/longevity?utm_source=instagram&utm_medium=dm&utm_campaign="+s},
+ detox:function(){return "https://salianta.com/products/max-detox-acai-detox?"+SCA},
+ sleep:function(){return "https://salianta.com/products/sleep-formula?"+SCA},
+ health:function(){return "https://salianta.com/products/advanced-blend?"+SCA},
+ ageless:function(){return "https://getlongevityfarms.shop/products/ageless-cocktail?utm_source=biohackinghq&utm_medium=ig_dm&utm_campaign=ageless"},
+ bundle:function(s){return "https://biohackinghq.gumroad.com/l/lab-bundle?wanted=true&utm_source=biohackinghq&utm_medium=black_friday&utm_campaign="+s},
+ join:function(s){return "https://biohackinghq.beehiiv.com/subscribe?utm_source=instagram&utm_medium=bhq_dm&utm_campaign="+s},
+ ic:function(s){return "https://biohackinghq.beehiiv.com/upgrade?utm_source=instagram&utm_medium=bhq_dm&utm_campaign="+s}
+};
+function clean(v,n){return String(v||"").toLowerCase().replace(/[^a-z0-9_.-]+/g,"-").replace(/^-+|-+$/g,"").slice(0,n)}
+var q=new URLSearchParams(location.search),d=clean(q.get("d"),30),s=clean(q.get("s"),40)||"dm";
+location.replace(D[d]?D[d](s):"../guides/");
+})();
+</script></head><body style="background:#0b0b0b;color:#f7f3ea;font-family:system-ui;padding:40px">Redirecting... <a style="color:#F6B21B" href="../guides/">Continue</a></body></html>

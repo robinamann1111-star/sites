@@ -30,3 +30,15 @@
     c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px');});
   });
 })();
+
+// soft gold glow that follows the cursor + hero parallax (fine pointers, motion allowed)
+(function(){
+  if(!window.matchMedia('(pointer: fine)').matches||window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var g=document.createElement('div');g.className='glowball';document.body.appendChild(g);
+  var x=-999,y=-999,cx=x,cy=y;
+  addEventListener('pointermove',function(e){x=e.clientX;y=e.clientY;if(cx<-900){cx=x;cy=y;}});
+  var rays=document.querySelector('.rays'),hz=document.querySelector('.horizon');
+  (function loop(){cx+=(x-cx)*.08;cy+=(y-cy)*.08;g.style.left=cx+'px';g.style.top=cy+'px';
+    var sy=scrollY;if(rays)rays.style.translate='0 '+(sy*.25)+'px';if(hz)hz.style.translate='0 '+(sy*-.06)+'px';
+    requestAnimationFrame(loop);})();
+})();

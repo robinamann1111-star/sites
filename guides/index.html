@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HQ Guides</title><meta name="robots" content="noindex">
+<meta name="description" content="Practical guides from BiohackingHQ and OperatorHQ: longevity, lab results and an AI operator setup.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a short shelf of three guides, cover first, one promise and one price each. */
+:root{--bg:#0b0b0b;--panel:#151310;--line:#2a261d;--fg:#f3efe6;--mut:#a7a194;--a:#F6B21B;--display:"Bricolage Grotesque",Georgia,serif;--body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+main{max-width:1060px;margin:0 auto;padding:64px 20px 72px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--a);margin-bottom:10px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,5vw,54px);line-height:1.05;letter-spacing:-.02em;text-wrap:balance;max-width:18ch}
+.lede{color:var(--mut);max-width:56ch;margin:16px 0 40px;font-size:18px}
+.shelf{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:880px){.g img{aspect-ratio:16/9}}
+.g{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:var(--fg)}
+.g img{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover;display:block;border-bottom:1px solid var(--line)}
+.g .b{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.g small{font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.g h2{font-family:var(--display);font-size:22px;line-height:1.15;letter-spacing:-.01em}
+.g p{color:var(--mut);font-size:15px}
+.g .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px}
+.price{font-family:var(--display);font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+.price s{font:500 15px var(--body);color:var(--mut);margin-left:6px}
+.go{background:var(--a);color:#111;font-weight:700;border-radius:10px;padding:10px 16px;font-size:15px}
+.note{color:var(--mut);font-size:14px;margin-top:22px}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+@media(max-width:880px){.shelf{grid-template-columns:1fr;max-width:520px}}
+</style></head>
+<body><main>
+<p class="eyebrow">BiohackingHQ · OperatorHQ</p>
+<h1>Guides that turn the research into a plan.</h1>
+<p class="lede">Three practical guides from the pages. Each one is a download you keep.</p>
+<div class="shelf">
+<a class="g" href="longevity-protocol/?ref=shelf"><img src="longevity-protocol/hero.jpg" alt="The Longevity Protocol cover" width="600" height="600"><div class="b"><small>BiohackingHQ</small><h2>The Longevity Protocol</h2><p>22 expert longevity claims checked against the research, turned into one plan for the 7 systems that decide how you age.</p><div class="row"><span class="price" data-after="$37">$27<s>$37</s></span><span class="go">See inside</span></div></div></a>
+<a class="g" href="normal-labs/?ref=shelf"><img src="normal-labs/hero.jpg" alt="Normal Labs, Still Exhausted cover" width="600" height="600"><div class="b"><small>BiohackingHQ</small><h2>Normal Labs, Still Exhausted</h2><p>What a TSH-only panel leaves out, the tests to ask for, 8 appointment scripts and a 30-day plan.</p><div class="row"><span class="price" data-after="$57">$47<s>$57</s></span><span class="go">See inside</span></div></div></a>
+<a class="g" href="operatorhq-system/?ref=shelf"><img src="operatorhq-system/hero.jpg" alt="The OperatorHQ System cover" width="600" height="600"><div class="b"><small>OperatorHQ</small><h2>The OperatorHQ System</h2><p>The AI operator setup behind OperatorHQ: tools, prompts and workflows that run content, scheduling and DM funnels.</p><div class="row"><span class="price">$47</span><span class="go">See inside</span></div></div></a>
+</div>
+<p class="note">From @biohackinghq_ (197K followers) and @operatorhq_.</p>
+<p class="note" id="fnote">Current prices on the two BiohackingHQ guides until Thu 3 Dec, 23:59 CET.</p>
+<script>(function(){if(Date.now()>=Date.UTC(2026,11,3,23,0,0)){document.querySelectorAll(".price[data-after]").forEach(function(p){p.textContent=p.dataset.after;});var n=document.getElementById("fnote");if(n)n.remove();}})();</script>
+</main>
+<!-- hq-track (07 Funnels, 17 Nov 2026): counts views + Buy clicks. Open any page once with ?notrack=1 to exclude your own browser. -->
+<script>
+(function(){try{
+var P="home",E="",q=new URLSearchParams(location.search),ls=window.localStorage;
+if(q.get("notrack")==="1"){try{ls.setItem("hq_notrack","1")}catch(e){}}
+if(q.get("notrack")==="0"){try{ls.removeItem("hq_notrack")}catch(e){}}
+if(!E)return;try{if(ls.getItem("hq_notrack")==="1")return}catch(e){}
+function src(){var s=q.get("utm_campaign")||q.get("ref")||q.get("utm_source");
+ if(s)return s;var r=document.referrer||"";if(!r)return"direct";
+ try{var h=new URL(r).hostname.replace(/^www\./,"");if(h===location.hostname)return"internal";
+ if(/instagram/.test(h))return"instagram";if(/beehiiv|mail|gmail|outlook/.test(h))return"email";if(/gumroad/.test(h))return"gumroad";if(/google/.test(h))return"google";return h}catch(e){return"other"}}
+var S=src();try{var k="hq_src_"+P;if(S==="internal"||S==="direct"){S=sessionStorage.getItem(k)||S}else{sessionStorage.setItem(k,S)}}catch(e){}
+function send(ev){var b="e="+ev+"&p="+encodeURIComponent(P)+"&s="+encodeURIComponent(S);
+ if(navigator.sendBeacon&&navigator.sendBeacon(E,new Blob([b],{type:"application/x-www-form-urlencoded"})))return;
+ (new Image()).src=E+"?"+b+"&t="+Date.now()}
+send("view");
+try{var d=new Date().toISOString().slice(0,10),uk="hq_seen_"+P;if(ls.getItem(uk)!==d){ls.setItem(uk,d);send("uview")}}catch(e){}
+var clicked=false;document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest&&ev.target.closest("a[href]");
+ if(!a)return;var h=a.getAttribute("href")||"";if(/gumroad\.com\/(l\/|checkout)|[?&]wanted=true/.test(h)&&!clicked){clicked=true;send("buy");setTimeout(function(){clicked=false},3000)}},true);
+}catch(e){}})();
+</script>
+<script src="motion.js" data-color="246,178,27" data-grow=".g" defer></script>
+</body></html>
