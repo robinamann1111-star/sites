@@ -1,9 +1,9 @@
 /* Shared motion layer v2 (Robin's sites, 17 Nov 2026): smooth scroll, soft glow cursor trail, gentle grow on hover.
-   <script src="/motion.js" data-color="167,139,250" data-grow=".btn,.card" defer></script>
+   <script src="/motion.js" data-color="246,178,27" data-grow=".btn,.card" defer></script>
    data-grow="" turns hover-grow off (for pages that style their own). */
 (function(){
   var me=document.currentScript||document.querySelector('script[src*="motion.js"]');
-  var rgb=(me&&me.dataset.color)||'167,139,250';
+  var rgb=(me&&me.dataset.color)||'246,178,27';
   var growSel=me&&me.dataset.grow!==undefined?me.dataset.grow:'a.btn,.btn,a.cta,.cta,.card';
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   var fine=window.matchMedia('(pointer: fine)').matches;
